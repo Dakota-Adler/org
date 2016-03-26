@@ -1,5 +1,7 @@
 # org
 
+click "raw" pls
+
 This is a ingame account creator for RS3.
 1) Login emails, which can be set in the gui, look like this: email-name+index(countingup)@email-host.
    If email is typed in wrong or is taken already, it will be corrected automaticly.
