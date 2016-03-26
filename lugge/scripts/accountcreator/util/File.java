@@ -7,7 +7,7 @@ import java.io.IOException;
 public class File {
     public static String LOG_PATH;
     public static String LOG_NAME;
-    
+
     public static void writeLog(String message) {
         String MessageAndDate = Time.getCalender(Time.calender.DATE) + " - " + Time.getCalender(Time.calender.TIME) + "   " + message;
         System.out.println(MessageAndDate);
@@ -26,12 +26,12 @@ public class File {
 
     public static void writeFile(String message, String fileName, boolean timeAndDate) {
         String messageAndDate;
-        if(timeAndDate) {
+        if (timeAndDate) {
             messageAndDate = Time.getCalender(Time.calender.DATE) + " - " + Time.getCalender(Time.calender.TIME) + "   " + message;
-        }else{
+        } else {
             messageAndDate = message;
         }
-       
+
         System.out.println(messageAndDate);
         BufferedWriter out;
         if (LOG_PATH != null && fileName != null) {

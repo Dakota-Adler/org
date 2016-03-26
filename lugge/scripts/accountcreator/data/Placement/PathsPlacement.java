@@ -3,7 +3,7 @@ package org.lugge.scripts.accountcreator.data.Placement;
 import org.powerbot.script.Tile;
 
 public enum PathsPlacement {
-    TO_VARROCK(new Tile[] {
+    TO_VARROCK(new Tile[]{
             new Tile(3233, 3221, 0),
             new Tile(3246, 3226, 0),
             new Tile(3259, 3234, 0),
@@ -20,7 +20,7 @@ public enum PathsPlacement {
             new Tile(3212, 3377, 0)
     }),
 
-    TO_GRAND_EXCHANGE(new Tile[] {
+    TO_GRAND_EXCHANGE(new Tile[]{
             new Tile(3212, 3389, 0),
             new Tile(3211, 3394, 0),
             new Tile(3204, 3408, 0),

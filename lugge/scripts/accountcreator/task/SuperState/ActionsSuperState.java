@@ -11,57 +11,57 @@ import org.powerbot.script.rt6.ClientContext;
 
 public class ActionsSuperState {
     public static void createAccount(ClientContext ctx) {
-        switch(ConditionsCreation.getCurrentState(ctx)) {
+        switch (ConditionsCreation.getCurrentState(ctx)) {
             case START_CREATION:
-                ActionsCreation.StartCreation(ctx);
+                ActionsCreation.startCreation(ctx);
                 break;
             case SELECT_MALE:
-                ActionsCreation.SelectMale(ctx);
+                ActionsCreation.selectMale(ctx);
                 break;
             case SELECT_FEMALE:
-                ActionsCreation.SelectFemale(ctx);
+                ActionsCreation.selectFemale(ctx);
                 break;
             case FINISH_DESIGN:
-                ActionsCreation.FinishDesign(ctx);
+                ActionsCreation.finishDesign(ctx);
                 break;
             case RANDOMISE_NAME:
-                ActionsCreation.RandomiseName(ctx);
+                ActionsCreation.randomiseName(ctx);
                 break;
             case ENTER_NAME:
-                ActionsCreation.EnterName(ctx);
+                ActionsCreation.enterName(ctx);
                 break;
             case DELETE_NAME:
-                ActionsCreation.DeleteName(ctx);
+                ActionsCreation.deleteName(ctx);
                 break;
             case ENTER_AGE:
-                ActionsCreation.EnterAge(ctx);
+                ActionsCreation.enterAge(ctx);
                 break;
             case DELETE_AGE:
-                ActionsCreation.DeleteAge(ctx);
+                ActionsCreation.deleteAge(ctx);
                 break;
             case ENTER_EMAIL:
-                ActionsCreation.EnterEmail(ctx);
+                ActionsCreation.enterEmail(ctx);
                 break;
             case DELETE_EMAIL:
-                ActionsCreation.DeleteEmail(ctx);
+                ActionsCreation.deleteEmail(ctx);
                 break;
             case ENTER_PASSWORD:
-                ActionsCreation.EnterPassword(ctx);
+                ActionsCreation.enterPassword(ctx);
                 break;
             case DELETE_PASSWORD:
-                ActionsCreation.DeletePassword(ctx);
+                ActionsCreation.deletePassword(ctx);
                 break;
             case FINISH_CREATION:
-                ActionsCreation.FinishCreation(ctx);
+                ActionsCreation.finishCreation(ctx);
                 break;
             case SKIP_CUT_SCENE:
-                ActionsCreation.SkipCutScene(ctx);
+                ActionsCreation.skipCutScene(ctx);
                 break;
             case SKIP_TUTORIAL:
-                ActionsCreation.SkipTutorial(ctx);
+                ActionsCreation.skipTutorial(ctx);
                 break;
             case END_SCRIPT:
-                ActionsCreation.EndScript(ctx);
+                ActionsCreation.endScript(ctx);
                 break;
             case NULL:
                 Paint.setStatus("NULL");
@@ -72,19 +72,19 @@ public class ActionsSuperState {
     public static void changeOptions(ClientContext ctx) {
         switch (ConditionsOptions.getCurrentState(ctx)) {
             case OPEN_GAME_SETTINGS:
-                ActionsOptions.OpenGameSettings(ctx);
+                ActionsOptions.openGameSettings(ctx);
                 break;
             case DISABLE_HINTS:
-                ActionsOptions.DisableHints(ctx);
+                ActionsOptions.disableHints(ctx);
                 break;
             case ENABLE_LEGACY_LAYOUT:
-                ActionsOptions.EnableLegacyLayout(ctx);
+                ActionsOptions.enableLegacyLayout(ctx);
                 break;
             case SWITCH_TO_LEGACY:
-                ActionsOptions.SwitchToLegacy(ctx);
+                ActionsOptions.switchToLegacy(ctx);
                 break;
             case CLOSE_GAME_SETTINGS:
-                ActionsOptions.CloseGameSettings(ctx);
+                ActionsOptions.closeGameSettings(ctx);
                 break;
             case NULL:
                 Paint.setStatus("NULL");
@@ -95,25 +95,25 @@ public class ActionsSuperState {
     public static void placeAccount(ClientContext ctx) {
         switch (ConditionsPlacement.getCurrentState(ctx)) {
             case TELEPORT_BURTHORPE:
-                ActionsPlacement.TeleportBurthorpe(ctx);
+                ActionsPlacement.teleportBurthorpe(ctx);
                 break;
             case TELEPORT_LUMBRIDGE:
-                ActionsPlacement.TeleportLumbridge(ctx);
+                ActionsPlacement.teleportLumbridge(ctx);
                 break;
             case WALK_VARROCK_LODESTONE:
-                ActionsPlacement.WalkVarrockLodestone(ctx);
+                ActionsPlacement.walkVarrockLodestone(ctx);
                 break;
             case ACTIVATE_VARROCK_LODESTONE:
-                ActionsPlacement.ActivateVarrockLodestone(ctx);
+                ActionsPlacement.activateVarrockLodestone(ctx);
                 break;
             case WALK_GRAND_EXCHANGE:
-                ActionsPlacement.WalkGrandExchange(ctx);
+                ActionsPlacement.walkGrandExchange(ctx);
                 break;
             case LOG_OUT:
-                ActionsPlacement.LogOut(ctx);
+                ActionsPlacement.logOut(ctx);
                 break;
             case END_SCRIPT:
-                ActionsPlacement.EndScript(ctx);
+                ActionsPlacement.endScript(ctx);
                 break;
             case NULL:
                 Paint.setStatus("NULL");

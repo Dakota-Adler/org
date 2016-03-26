@@ -9,7 +9,7 @@ public class Teleport {
             ctx.widgets.component(1465, 56).click();
             Condition.wait(() -> ctx.widgets.component(1092, 0).visible(), 200, 5);
             return false;
-        }else{
+        } else {
             ctx.widgets.component(1092, destination).click();
             Condition.wait(() -> ctx.players.local().animation() != -1, 200, 10);
             Condition.wait(() -> ctx.players.local().animation() == -1, 500, 20);

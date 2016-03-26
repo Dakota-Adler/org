@@ -7,4 +7,6 @@ public class SettingsSuperState {
         File.LOG_PATH = FilePath;
         File.LOG_NAME = FileName;
     }
+
+    public static boolean running = false;
 }

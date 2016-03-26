@@ -108,7 +108,7 @@ public class ConditionsCreation {
                 if (!ctx.players.local().tile().equals(TilesCreation.SPAWN_POINT.getTile())) {
                     if (Interface.getComponent(WidgetsCreation.SKIP_CUT_SCENE, ctx).visible()) {
                         return StatesCreation.SKIP_CUT_SCENE;
-                    } else if(Interface.getComponent(WidgetsCreation.ARRIVED, ctx).visible()){
+                    } else if (Interface.getComponent(WidgetsCreation.ARRIVED, ctx).visible()) {
                         return StatesCreation.SKIP_TUTORIAL;
                     }
                 }
